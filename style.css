@@ -1,0 +1,121 @@
+:root{
+	font-size: 14px;
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+	background:#fff;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*---HEADER---*/
+
+#carousel-header{
+	height:75vh;
+	background-image: url(IMG/XS288-ARTWORK.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+
+.gradient{
+	background-image: linear-gradient( transparent,#171717);
+	height:37.5vh;
+	min-width:100%;
+	margin:0 -15px;
+	position: absolute;
+	top:50%;
+}
+
+
+.profile-container{
+	text-align: center;
+	color: #fff;
+	font-size: 1rem;
+	display:block;
+	position: absolute;
+	left:50%;
+	top: 100%;
+	transform: translate(-50%, -100%);
+	padding-bottom: 3rem;
+}
+
+.profile-img{
+	border-radius: 100%;
+	width:9.375rem;
+	margin: 0 auto;
+}
+
+h1{
+	font-weight:600;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.profile-container p{
+	font-weight: 100;
+	margin: 1.42rem 0;
+}
+
+.profile-links a{
+	color:#fff;
+	margin: 0 0.5rem;
+}
+
+/*---NAVIGATION---*/
+
+.navbar{
+	border-radius: 0;
+	border:none;
+	background:#333;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0;
+}
+
+.nav, .navbar-nav{
+	display: inline-block;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-weight: 200;
+	color:#fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:visited
+{
+	color:#fff;
+	background:#171717;
+}
+
+/*---NAV MEDIA QUERIES---*/
+
+@media (max-width:767px){
+	.navbar{
+		display: block;
+		text-align: center;
+	}
+	.nav, .navbar-nav{
+		width:100%;
+	}
+}
+
+/*---MAIN---*/
+
+#main{
+	height:100vh;
+	background:#171717;
+}
+
+#main .container{
+	padding-top: 0.35714286rem;
+}
+
+.col-md-2{
+	padding:0.35714286rem;
+}
