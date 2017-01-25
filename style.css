@@ -21,6 +21,7 @@ html, body{
 	position: relative;
 }
 
+
 .gradient{
 	background-image: linear-gradient( transparent,#171717);
 	height:37.5vh;
@@ -35,11 +36,14 @@ html, body{
 	text-align: center;
 	color: #fff;
 	font-size: 1rem;
+	width:100%;
 	display:block;
 	position: absolute;
 	left:50%;
 	top: 100%;
 	transform: translate(-50%, -100%);
+	-webkit-transform: translate(-50%, -100%);
+	-moz-transform: translate(-50%, -100%);
 	padding-bottom: 3rem;
 }
 
@@ -87,7 +91,8 @@ h1{
 
 .navbar-default .navbar-nav>li>a:hover, 
 .navbar-default .navbar-nav>li>a:active,
-.navbar-default .navbar-nav>li>a:visited
+.navbar-default .navbar-nav>li>a:visited,
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
 {
 	color:#fff;
 	background:#171717;
@@ -108,14 +113,35 @@ h1{
 /*---MAIN---*/
 
 #main{
-	height:100vh;
+	min-height:100vh;
 	background:#171717;
 }
 
 #main .container{
 	padding-top: 0.35714286rem;
+	/*padding-bottom: 1.42857143rem;*/
 }
 
 .col-md-2{
 	padding:0.35714286rem;
+}
+
+/*---MAIN QUERIES---*/
+
+
+/*---FOOTER---*/
+
+#footer-container{
+	height:5rem;
+	background:#333;
+	color:rgba(100,100,100,1);
+	display:flex;
+	align-items: center;
+	justify-content: flex-end;
+	
+}
+
+#footer-container p{
+	margin-right:1.42857143rem;
+	margin-bottom: 0;
 }
