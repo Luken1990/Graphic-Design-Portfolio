@@ -1,5 +1,5 @@
 :root{
-	font-size: 14px;
+	font-size: 16px;
 }
 
 html, body{
@@ -13,12 +13,42 @@ html, body{
 
 #carousel-header{
 	height:75vh;
+/*
 	background-image: url(IMG/XS288-ARTWORK.jpg);
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
+*/
 	position: relative;
+	padding: 0;
+}
+
+.slide-1{
+	height:75vh;
+	background-image: url(IMG/ChristmasPug-ARTWORK.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.slide-2{
+	height:75vh;
+	background-image: url(IMG/PizzaCakeCat-Cover.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.slide-3{
+	height:75vh;
+	background-image: url(IMG/Yaz-Photography-01-Cover.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
 }
 
 
@@ -26,9 +56,9 @@ html, body{
 	background-image: linear-gradient( transparent,#171717);
 	height:37.5vh;
 	min-width:100%;
-	margin:0 -15px;
+	/*margin:0 -15px;*/
 	position: absolute;
-	top:50%;
+	top:50.1%;
 }
 
 
@@ -118,12 +148,15 @@ h1{
 }
 
 #main .container{
-	padding-top: 0.35714286rem;
-	/*padding-bottom: 1.42857143rem;*/
+	padding:0.3125rem 0.9375rem;
 }
 
 .col-md-2{
-	padding:0.35714286rem;
+	padding:0.3125rem;
+}
+
+.hidden{
+	display: none;
 }
 
 /*---MAIN QUERIES---*/
@@ -134,7 +167,9 @@ h1{
 #footer-container{
 	height:5rem;
 	background:#333;
-	color:rgba(100,100,100,1);
+	color:#fff;
+	font-weight: 200;
+	letter-spacing:0.1em;
 	display:flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -142,6 +177,5 @@ h1{
 }
 
 #footer-container p{
-	margin-right:1.42857143rem;
-	margin-bottom: 0;
+	margin:0 1.25rem 0 0;
 }
