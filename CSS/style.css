@@ -26,7 +26,7 @@ html, body{
 
 .slide-1{
 	height:75vh;
-	background-image: url(IMG/ChristmasPug-ARTWORK.jpg);
+	background-image: url(/Graphic-Design-Portfolio/IMG/ChristmasPug-ARTWORK.jpg);
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -35,7 +35,7 @@ html, body{
 
 .slide-2{
 	height:75vh;
-	background-image: url(IMG/PizzaCakeCat-Cover.jpg);
+	background-image: url(/Graphic-Design-Portfolio/IMG/PizzaCakeCat-Cover.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -44,7 +44,7 @@ html, body{
 
 .slide-3{
 	height:75vh;
-	background-image: url(IMG/Yaz-Photography-01-Cover.jpg);
+	background-image: url(/Graphic-Design-Portfolio/IMG/Yaz-Photography-01-Cover.jpg);
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -128,6 +128,18 @@ h1{
 	background:#171717;
 }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background: none;
+}
+
+.navbar-default .navbar-toggle{
+	border:none;
+}
+
+@keyframe{
+	
+}
+
 /*---NAV MEDIA QUERIES---*/
 
 @media (max-width:767px){
@@ -178,4 +190,18 @@ h1{
 
 #footer-container p{
 	margin:0 1.25rem 0 0;
+}
+
+/*---FOOTER QUERIES---*/
+
+@media (max-width:767px){
+	#footer-container{
+		justify-content: center;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	#footer-container p{
+		margin:0.2rem 1.25rem;
+		font-size: 0.8rem;
+	}
 }
