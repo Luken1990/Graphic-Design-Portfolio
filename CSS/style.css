@@ -26,7 +26,7 @@ html, body{
 
 .slide-1{
 	height:75vh;
-	background-image: url(/Graphic-Design-Portfolio/IMG/ChristmasPug-ARTWORK.jpg);
+	background-image: url(/Graphic-Design-Portfolio/IMG/Cover-IMG/ChristmasPug-ARTWORK.jpg);
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -35,7 +35,7 @@ html, body{
 
 .slide-2{
 	height:75vh;
-	background-image: url(/Graphic-Design-Portfolio/IMG/PizzaCakeCat-Cover.jpg);
+	background-image: url(/Graphic-Design-Portfolio/IMG/Cover-IMG/PizzaCakeCat-Cover.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -44,7 +44,7 @@ html, body{
 
 .slide-3{
 	height:75vh;
-	background-image: url(/Graphic-Design-Portfolio/IMG/Yaz-Photography-01-Cover.jpg);
+	background-image: url(/Graphic-Design-Portfolio/IMG/Cover-IMG/Yaz-Photography-01-Cover.jpg);
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
