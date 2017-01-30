@@ -4,6 +4,7 @@ $(document).ready(function(){
 		$(this).parent().addClass("active");
 		
 		var category = $(this).text().toLowerCase().replace(" ", "-");
+
 		
 		if(category === "all"){
 			$("#main .container .row div").fadeIn("slow").removeClass("hidden");
@@ -18,5 +19,6 @@ $(document).ready(function(){
 		}
 		return false;
 	});
+	
 	
 });
