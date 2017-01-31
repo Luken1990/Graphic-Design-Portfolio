@@ -1,10 +1,9 @@
 $(document).ready(function(){
-	$("ul.nav li a").on("click", function(){
-		$("ul.nav li.active").removeClass("active");
+	$(".gallery-nav li a").on("click", function(){
+		$(".gallery-nav li.active").removeClass("active");
 		$(this).parent().addClass("active");
 		
 		var category = $(this).text().toLowerCase().replace(" ", "-");
-
 		
 		if(category === "all"){
 			$("#main .container .row div").fadeIn("slow").removeClass("hidden");
@@ -20,5 +19,8 @@ $(document).ready(function(){
 		return false;
 	});
 	
+	$(".navbar-toggle").on("click", function(){
+		$(this).toggleClass("open");
+	});
 	
 });
