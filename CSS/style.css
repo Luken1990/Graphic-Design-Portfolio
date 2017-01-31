@@ -9,6 +9,11 @@ html, body{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+p{
+	font-size: 1rem;
+	font-weight: 100;
+}
+
 /*---HEADER---*/
 
 #carousel-header{
@@ -195,6 +200,69 @@ h1{
 
 /*---MAIN QUERIES---*/
 
+
+/*---CONTACT SECTION---*/
+
+#about{
+	min-height:100vh;
+	background:#171717;
+}
+
+#about .container{
+	padding:0.3125rem 0.9375rem;
+}
+
+.content-wrapper{
+	max-width:50vh;
+	margin: 0 auto;
+	padding-top:5rem;
+	color:#fff;
+}
+
+.content-wrapper hr{
+	margin: 0px 20px;
+	border: 0;
+	border-top: 0.0625rem solid #333;
+}
+
+.content-wrapper h2{
+	margin: 0;
+	padding:1.25rem;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.content-wrapper p{
+	margin: 0;
+	padding:1.25rem;
+}
+
+.adobeIcon-wrapper img, .frontendIcon-wrapper img{
+	display:inline-block;
+	max-width:40px;
+	margin:0.625rem;
+}
+
+.content-wrapper h3{
+	font-size: 1.2rem;
+	margin: 0;
+	padding:1.25rem;
+	margin-top: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.contactIcon-wrapper a{
+	margin:0 0.625rem;
+}
+
+.contactIcon-wrapper a{
+	color:#333;
+}
+
+.contactIcon-wrapper a:hover{
+	color:#fff;
+}
 
 /*---FOOTER---*/
 
