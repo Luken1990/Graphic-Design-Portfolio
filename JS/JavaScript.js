@@ -8,12 +8,20 @@ $(document).ready(function(){
 		if(category === "all"){
 			$("#main .container .row div").fadeIn("slow").removeClass("hidden");
 			$("#about").addClass("hidden");
+			$("#other-work").addClass("hidden");
 			$("#main").removeClass("hidden");
 		}
 		else if(category === "about"){
 			$("#about").removeClass("hidden");
+			$("#other-work").addClass("hidden");
 			$("#main").addClass("hidden");
 			$("#about .container .row .content-wrapper h2").addClass("animated fadeInDown");
+		}
+		else if(category === "other-work"){
+			$("#about").addClass("hidden");
+			$("#main").addClass("hidden");
+			$("#other-work").removeClass("hidden");
+			$("#other-work .container h2").addClass("animated fadeInDown");
 		}
 		else{
 			$("#main .container .row div").each(function(){
@@ -21,9 +29,9 @@ $(document).ready(function(){
 					$(this).hide().addClass("hidden");
 					$("#main").removeClass("hidden");
 					$("#about").addClass("hidden");
+					$("#other-work").addClass("hidden");
 				}else{
-					$(this).fadeIn("slow").removeClass("hidden");
-					$("#about").addClass("hidden");
+					$(this).fadeIn("slow").removeClass("hidden");	
 				}
 			});
 		}
