@@ -16,6 +16,7 @@ h2{
 
 p{
 	font-size: 1rem;
+	letter-spacing: 0.0625em;
 	font-weight: 100;
 }
 
@@ -117,12 +118,14 @@ h1{
 	}
 	.profile-container h1{
 		margin:0.625rem 0;
+		font-size: 1.5rem;
 	}
 	.profile-container p{
+		font-size:0.875rem;
 		margin:0 0 0.625rem 0;
 	}
 	.profile-img{
-		width: 6rem;
+		width: 5rem;
 	}
 }
 
@@ -288,8 +291,22 @@ h1{
 	margin-bottom:0.625rem; 
 }
 
+/*---OTHER QUERIES---*/
 
-/*---CONTACT SECTION---*/
+@media (max-width:414px){
+	#other-work .container {
+    padding: 5rem 0.9375rem 0.3125rem;
+	}
+}
+@media (max-height:414px){
+	
+	#other-work .container {
+    padding: 5rem 0.9375rem 5rem;
+	}
+}
+
+
+/*---ABOUT SECTION---*/
 
 #about{
 	min-height:100vh;
@@ -297,7 +314,7 @@ h1{
 }
 
 #about .container{
-	padding:0.3125rem 0.9375rem;
+	padding:0 0.9375rem;
 }
 
 .content-wrapper{
@@ -332,52 +349,54 @@ h1{
 .content-wrapper h3{
 	font-size: 1.2rem;
 	margin: 0;
-	padding:1.25rem;
+	/*padding:1.25rem;*/
 	margin-top: 2.5rem;
 	text-transform: uppercase;
 	font-weight: 300;
 }
 
-.contactIcon-wrapper a{
-	margin:0 0.625rem;
-}
+/*---ABOUT QUERIES---*/
 
-.contactIcon-wrapper a{
-	color:#333;
-}
-
-.contactIcon-wrapper a:hover{
-	color:#fff;
+@media (max-height:414px){
+	.content-wrapper{
+		max-width:100vh;
+		padding:5rem 0;
+	}
 }
 
 /*---FOOTER---*/
 
-#footer-container{
+footer{
 	height:5rem;
 	background:#333;
 	color:#fff;
-	font-weight: 200;
-	letter-spacing:0.1em;
-	display:flex;
-	align-items: center;
-	justify-content: flex-end;
-	
 }
 
-#footer-container p{
-	margin:0 1.25rem 0 0;
+footer .container{
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.socialIcon-wrapper a{
+	margin:0 0.625rem;
+}
+
+.socialIcon-wrapper a{
+	color:#fff;
+}
+
+.socialIcon-wrapper a:hover{
+	color:#171717;
 }
 
 /*---FOOTER QUERIES---*/
 
 @media (max-width:767px){
-	#footer-container{
+	footer .container{
 		justify-content: center;
 		flex-direction: column;
-		align-items: flex-start;
-	}
-	#footer-container p{
-		margin:0.2rem 1.25rem;
-		font-size: 0.8rem;
+		align-items: center;
 	}
 }
