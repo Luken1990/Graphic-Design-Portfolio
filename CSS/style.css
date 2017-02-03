@@ -301,6 +301,10 @@ h1{
 	#other-work .container {
     padding: 5rem 0.9375rem 0.3125rem;
 	}
+	
+	.col-xs-6{
+		width: 100%;
+	}
 }
 @media (max-height:414px){
 	
