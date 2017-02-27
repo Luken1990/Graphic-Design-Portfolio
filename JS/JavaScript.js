@@ -17,7 +17,7 @@ $(document).ready(function(){
 			$("#main").addClass("hidden");
 			$("#about .container .row .content-wrapper h2").addClass("animated fadeInDown");
 		}
-		else if(category === "other-work"){
+		else if(category === "websites"){
 			$("#about").addClass("hidden");
 			$("#main").addClass("hidden");
 			$("#other-work").removeClass("hidden");
@@ -42,5 +42,9 @@ $(document).ready(function(){
 		$(this).toggleClass("open");
 	});
 	
-	
+	$('#carousel-cover').carousel({
+			interval: 3000
+    });
+
+	$('#carousel-cover .item:first').addClass('active');
 });
