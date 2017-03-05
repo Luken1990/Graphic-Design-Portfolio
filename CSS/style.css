@@ -28,6 +28,13 @@ p{
 	padding: 0;
 }
 
+.carousel-inner{
+	transform: translateZ(0px);
+		-moz-transform: translateZ(0px);
+		-webkit-transform: translateZ(0px);
+		-o-transform: translateZ(0px);
+}
+
 .item{
 	height:75vh;
 	overflow: hidden;
